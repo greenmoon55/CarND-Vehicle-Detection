@@ -73,7 +73,7 @@ HOG features are useful for the shape of the car, histogram of color is helpful 
 My code is based on the code from "Hog Sub-sampling Window Search", which requires computing hog features only once for the whole image. I used two window scales. The first one is 1.8 which I searched with from y=400 to 656. The second one is 1.2. It is a small window only needed for distant cars. So I set a range of y=400 to 500, x=240 to 1040 because when a car is at the rightmost or leftmost of x axis is likely to be near my car.  
 
 
-####2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
+#### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
