@@ -93,7 +93,7 @@ Here's a [link to my video result](./output.mp4)
 
 I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.
 
-Here's an example of heatmap for the test images above. I used a simple threshold of 1.
+Here's an example of heatmap for the test images above. I used a simple threshold of 2.
 ![alt text][image5]
 
 However, there are still many false positives in the video and the detected rectangle is wobbly. So I tested recording all the detected boxes and only show them when they were detected for 15 frames in a row.
